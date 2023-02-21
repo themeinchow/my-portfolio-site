@@ -3,6 +3,7 @@ import pandas
 
 st.set_page_config(layout="wide")
 
+# Setting up the top two columns
 col1, col2 = st.columns(2)
 
 with col1:
@@ -22,6 +23,7 @@ Feel free to contact me!
 
 st.write(content2)
 
+# Setting up the rest of the page to display my apps
 col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv", sep=";")
 
